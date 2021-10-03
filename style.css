@@ -1,0 +1,35 @@
+.user_menu {
+background-color: red;
+display: flex;
+  justify-content: space-between;
+  height: 60px;
+
+}
+.user_name {
+  
+}
+.user_coins {
+  background-color: yellow;
+  width: 100px;
+}
+.avtomat {
+  height: 200px;
+  background-color: blue;
+}
+.stavki {
+  display: flex;
+  justify-content: center;
+  padding: 10px
+
+}
+.stavki button{
+  padding: 14px;
+  margin: 14px;
+  border-radius: 18px;
+  width: 38px;
+  background-color: green;
+}
+#stavka {
+  width: 100px;
+  background-color: red;
+}
