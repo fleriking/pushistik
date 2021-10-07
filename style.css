@@ -12,10 +12,20 @@ display: flex;
   background-color: yellow;
   width: 100px;
 }
+.colums {
+  margin: 3px;
+  border: 1px solid red;
+  
+}
 .avtomat {
   height: 200px;
   background-color: blue;
+  font-size: 180px;
+  display: flex;
+  justify-content: space-between;
+
 }
+
 .stavki {
   display: flex;
   justify-content: center;
