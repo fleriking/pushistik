@@ -1,3 +1,6 @@
+body {
+  background-image: url(cats.jpg);
+}
 .user_menu {
 background-color: red;
 display: flex;
@@ -12,19 +15,46 @@ display: flex;
   background-color: yellow;
   width: 100px;
 }
+.colums {
+  margin: 3px;
+  border: 1px solid red;
+  width: 19%;
+  
+}
+.avtomat img{
+  width: 100%;
+
+}
 .avtomat {
-  height: 200px;
+  
   background-color: blue;
+  
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.multy {
+  display: flex;
+  justify-content: center;
+  color:white;
+  padding: 2px;
+  padding-bottom: 0px;
+
 }
 .stavki {
   display: flex;
   justify-content: center;
-  padding: 10px
+
+  padding: 4px;
+  padding-top: 0px;
+
 
 }
 .stavki button{
   padding: 14px;
   margin: 14px;
+  margin-top: 3px;
   border-radius: 18px;
   width: 38px;
   background-color: green;
@@ -32,4 +62,31 @@ display: flex;
 #stavka {
   width: 100px;
   background-color: red;
+}
+.messages {
+  display: inline-block;
+  background-color: rgba(256,256,256,0.5);
+  color:red;
+  border: 2px solid orange;
+  border-radius: 15px;
+  
+  padding: 2px;
+  padding-bottom: 0px;
+  width: auto;
+  text-align: center;
+
+}
+.parrent_messages{
+  display: flex;
+  justify-content: center;
+}
+.bottom_avtomat {
+  
+  display: inline-block;
+    
+  
+}
+.avtomat_ramka{
+  background-color: rgba(249,201,16,0.5);
+  text-align: center;
 }
