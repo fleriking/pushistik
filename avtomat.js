@@ -160,7 +160,8 @@ function onClickMinus(event) {
 function onClickPlusMany(event) {
   let x = setInterval(function tmp() {
     onClickPlus(event)
-  }, 400)
+	  console.log(event)
+  }, 300)
   stavka_plus.addEventListener(event.type == "mousedown"?'mouseup' :'touchend'
 		  , function() {
     clearInterval(x)
@@ -175,7 +176,7 @@ function onClickMinusMany(event) {
     //stavka_minus.onmouseup = null
     console.log(event)
     //}
-  }, 400)
+  }, 300)
 	//console.log(event.type)
   stavka_minus.addEventListener(event.type == "mousedown"?'mouseup' :'touchend'
 		  , function() {
@@ -187,7 +188,7 @@ function onClickMinusMany(event) {
 stavka.addEventListener('click', onClick)
 stavka_plus.addEventListener('click', onClickPlus)
 stavka_plus.addEventListener('mousedown', onClickPlusMany)
-stavka_plus.addEventListener('mousedown', onClickPlusMany)
+stavka_plus.addEventListener('touchstart', onClickPlusMany)
 
 stavka_minus.addEventListener('click', onClickMinus)
 stavka_minus.addEventListener('mousedown', onClickMinusMany)
