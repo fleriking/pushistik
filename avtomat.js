@@ -10,23 +10,33 @@ let multy_html = document.querySelector('.multy')
 let messages = document.querySelector('.messages')
 
 let coins = document.getElementById('coins')
-let coins_value = 0
+
 let multy = 1
 
 function addCoins(n) {
   if ((typeof n == 'number') && n > 0) {
     coins_value += n
-    coins.textContent = coins_value
+    coins.textContent = Number(coins_value.toFixed(2))
   } else {
     alert('wrong value!')
   }
 }
 
+var urlParam = function(name, w){
+  w = w || window;
+  var rx = new RegExp('[\&|\?]'+name+'=([^\&\#]+)'),
+      val = w.location.search.match(rx);
+  return !val ? '':val[1];
+}
+
+let coins_value = coins.textContent = Number(urlParam('coins'))
+
+
 let col1234 = [
   {name: '1', src: '1.jpg', chance: 0.377, position: 0},
   {name: '2', src: '2.jpg', chance: 0.363, position: 1},
   {name: '3', src: '3.jpg', chance: 0.361, position: 2},
-  {name: 'smile', src: 'smile.jpg', chance: 0.30, position: 3},
+  {name: 'smile', src: 'smile.jpg', chance: 0.29, position: 3},
   {name: 'wild', src: 'wild.jpg', chance: 0.2, position: 4}]
 
 const cols = {
@@ -62,7 +72,7 @@ const mass_win = [
 
 function onClick(event) {
   console.log('click', event.target)
-  if (event.target.id === 'stavka') {
+  if (coins_value>=multy) {
     const results_avtomat = []
     for (let i = 0; i < colums.length; i++) {
       const b = cols[`col_${i}`].length
@@ -138,6 +148,8 @@ function onClick(event) {
     coins_value += (earn_avtomat - 1) * multy
     coins.textContent = Number(coins_value.toFixed(2))
     
+  } else {
+    messages.textContent = 'Buy more coins!'
   }
 }
 

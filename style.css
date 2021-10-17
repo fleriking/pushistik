@@ -1,34 +1,45 @@
 body {
   background-image: url(cats.jpg);
 }
+
 .user_menu {
-background-color: red;
-display: flex;
+
+  display: flex;
   justify-content: space-between;
-  height: 60px;
+  height: 10vw;
+  text-align: center;
+  font-size:  10vw;
 
 }
 .user_name {
-  
+  text-align: center;
+  background-color: red;
+  width: 75%;
+  border: 0px;
+  border-top-left-radius: 5vw;
 }
 .user_coins {
   background-color: yellow;
-  width: 100px;
+  width: 25%;
+  font-size: 6vw;
+  padding-top: 2%;
+  border: 0px;
+  border-top-right-radius: 5vw;
 }
 .colums {
   margin: 3px;
   border: 1px solid red;
-  width: 19%;
-  
+  width: 20%;
+
 }
 .avtomat img{
   width: 100%;
 
 }
 .avtomat {
-  
+
   background-color: blue;
-  
+
   display: flex;
   justify-content: space-between;
 
@@ -38,40 +49,42 @@ display: flex;
   display: flex;
   justify-content: center;
   color:white;
-  padding: 2px;
-  padding-bottom: 0px;
+  padding: 0.5vw;
+  padding-bottom: 0vw;
 
 }
 .stavki {
   display: flex;
   justify-content: center;
 
-  padding: 4px;
-  padding-top: 0px;
+  padding: 0vw;
+  padding-top: 0.5vw;
 
 
 }
 .stavki button{
-  padding: 14px;
-  margin: 14px;
-  margin-top: 3px;
-  border-radius: 18px;
-  width: 38px;
+  padding: 0.7vw;
+  margin: 0.7vw;
+  margin-top: 0.1vw;
+  border-radius: 1.3vw;
+  width: 6vw;
   background-color: green;
+  font-size: 3vw;
+  text-align: center;
 }
 #stavka {
-  width: 100px;
+  width: 12vw;
   background-color: red;
 }
 .messages {
   display: inline-block;
   background-color: rgba(256,256,256,0.5);
   color:red;
-  border: 2px solid orange;
-  border-radius: 15px;
-  
-  padding: 2px;
-  padding-bottom: 0px;
+  border: 0.2vw solid orange;
+  border-radius: 3vw;
+
+  padding: 0.1vw;
+  padding-bottom: 0vw;
   width: auto;
   text-align: center;
 
@@ -81,12 +94,17 @@ display: flex;
   justify-content: center;
 }
 .bottom_avtomat {
-  
-  display: inline-block;
-    
-  
+  border: 0px;
+  text-align: center;
+  background-color: rgba(95, 155, 255, 0.72);
+  border-bottom-left-radius: 5vw;
+  border-bottom-right-radius: 5vw;
+  font-size: 2.2vw;
 }
 .avtomat_ramka{
+  display: inline-block;
   background-color: rgba(249,201,16,0.5);
   text-align: center;
+  border: 0.2vw solid chartreuse;
+  border-radius: 3vw;
 }
